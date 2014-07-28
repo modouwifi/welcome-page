@@ -1,0 +1,49 @@
+#!/bin/sh
+
+curdir=$(cd $(dirname $0) && pwd)
+
+usage() {
+    echo "ERROR: action missing"
+    echo "syntax: $0 <start|stop|restart|status|config|install|uninstall>"
+    echo "example: $0 start"
+}
+
+enableWelcomePage() {
+    /system/sbin/welcomePage.sh start
+}
+
+disableWelcomePage() {
+    /system/sbin/welcomePage.sh stop
+}
+
+install() {
+    /system/sbin/welcomePage.sh config init $curdir/welcome.html
+}
+
+uninstall() {
+    /system/sbin/welcomePage.sh config clean $curdir/welcome.html
+}
+
+# main
+case "$1" in
+    "start" | "restart" )
+        enableWelcomePage ;;
+    "stop" )
+        disableWelcomePage ;;
+    "status" )
+        echo "welcome page status" ;;
+    "config" )
+        echo "configured" ;;
+    "install" )
+        install
+        enableWelcomePage
+        echo "installed" ;;
+    "uninstall" )
+        disableWelcomePage
+        uninstall
+        echo "uninstalled" ;;
+    * )
+        usage ;;
+esac
+
+exit $?

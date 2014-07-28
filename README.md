@@ -1,4 +1,16 @@
-welcome-page
-============
+# hdns
 
-app for user-defined welcome page
+welcomepage是一个可以定制欢迎页面的魔豆路由器插件。使用该插件，可以在用户第一次无线登陆的时候显示一个HTTP欢迎页面。
+
+# 安装
+
+
+# 使用
+
+
+# 配置文件
+
+
+# 有关魔豆
+
+魔豆是首台带有触摸屏的智能路由器，欢迎前往 [魔豆路由器官网](http://modouwifi.com) 了解更多。我们在 [魔豆社区-魔谷汇](http://modouwifi.cn) 里有很多小伙伴，欢迎大家前往。 :)
