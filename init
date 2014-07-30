@@ -27,6 +27,7 @@ uninstall() {
 # main
 case "$1" in
     "start" | "restart" )
+        install
         enableWelcomePage ;;
     "stop" )
         disableWelcomePage ;;
