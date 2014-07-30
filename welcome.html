@@ -278,7 +278,11 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
 
 			$(".accept").click(function(){
 				Ajax.get('/api/welcome/release', function(data) {
-					alert("您已连接到魔豆路由器")
+					// alert("您已连接到魔豆路由器")
+					setTimeout(
+						function(){
+							location.href = "http://www.modouwifi.com";
+						},2000)
 				});
 			});
 		</script>
