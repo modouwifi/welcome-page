@@ -1,11 +1,11 @@
 {
-    "package_id"      : "com.modou.welcome-page",
+    "package_id"      : "com.modouwifi.welcome-page",
     "name"            : "welcome-page",
     "author"          : "魔豆路由器",
     "author_mail"     : "rd@mochui.net",
     "homepage"        : "www.modouwifi.com",
-    "version"         : "0.4",
-    "release_date"    : "2014.08.07",
+    "version"         : "0.4.1",
+    "release_date"    : "2014.08.19",
     "icon"            : "./res/icon_111X111.png",
     "location"        : "internal",
     "description"     : "欢迎页"
